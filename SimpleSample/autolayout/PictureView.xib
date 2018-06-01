@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PictureView">
+            <connections>
+                <outlet property="commentTextView" destination="mna-Gj-8m9" id="Zev-K0-eYr"/>
+                <outlet property="imageView" destination="AKL-oR-lrO" id="6re-tX-YGC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-oR-lrO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Comment Area" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mna-Gj-8m9">
+                    <rect key="frame" x="10" y="510.5" width="355" height="146.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.4557390628866535" green="0.70133998756450655" blue="0.99336069822311401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mna-Gj-8m9" secondAttribute="bottom" constant="10" id="1G5-yR-tYa"/>
+                <constraint firstItem="AKL-oR-lrO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6G5-oy-zHo"/>
+                <constraint firstItem="AKL-oR-lrO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IeY-b6-Hdh"/>
+                <constraint firstItem="mna-Gj-8m9" firstAttribute="top" secondItem="AKL-oR-lrO" secondAttribute="bottom" constant="10" id="JU8-KC-nkb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mna-Gj-8m9" secondAttribute="trailing" constant="10" id="gu0-8V-kGR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AKL-oR-lrO" secondAttribute="trailing" id="hE1-yB-v7C"/>
+                <constraint firstItem="mna-Gj-8m9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="mYg-CV-0Pr"/>
+                <constraint firstItem="AKL-oR-lrO" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.75" id="sO9-7x-wYf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
